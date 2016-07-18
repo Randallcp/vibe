@@ -13,8 +13,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     
     let emojiList : [String] = ["test1", "test2"]
-    let searchResults: [String] = ["hi", "hello", "yo", "yo"]
-    let trending: [String] = ["omg", "brb", "lol"]
+    let searchResults: [Music] = []
+    let trending: [Music] = []
     
     
 //    var emojiCollectionView : UICollectionView!;
