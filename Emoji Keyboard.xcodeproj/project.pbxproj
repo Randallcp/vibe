@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51ACB35F68DA26343BC3A905 /* Pods_Milwaukee_Emoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EECF9522899D91C4F761F9 /* Pods_Milwaukee_Emoji.framework */; };
+		875DF6A2969B6C40341F4144 /* Pods_Emoji_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3F1226CC790814F89E3CB3 /* Pods_Emoji_Keyboard.framework */; };
+		A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34514401C7E72920000F1F5 /* emojiCell.swift */; };
+		A34514431C7E72920000F1F5 /* emojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34514411C7E72920000F1F5 /* emojiCell.xib */; };
+		A34514451C7FC09E0000F1F5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34514441C7FC09E0000F1F5 /* Media.xcassets */; };
+		A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514461C7FD1BE0000F1F5 /* accordion.png */; };
+		A345145B1C7FD1BE0000F1F5 /* bar-dice.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514471C7FD1BE0000F1F5 /* bar-dice.png */; };
+		A345145C1C7FD1BE0000F1F5 /* beastie.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514481C7FD1BE0000F1F5 /* beastie.png */; };
+		A345145D1C7FD1BE0000F1F5 /* bratwurst.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514491C7FD1BE0000F1F5 /* bratwurst.png */; };
+		A345145E1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */; };
+		A345145F1C7FD1BE0000F1F5 /* cheesehead-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */; };
+		A34514601C7FD1BE0000F1F5 /* cheesehead-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */; };
+		A34514611C7FD1BE0000F1F5 /* dome.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144D1C7FD1BE0000F1F5 /* dome.png */; };
+		A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */; };
+		A34514641C7FD1BE0000F1F5 /* lake-michigan.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514501C7FD1BE0000F1F5 /* lake-michigan.png */; };
+		A34514651C7FD1BE0000F1F5 /* laverne.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514511C7FD1BE0000F1F5 /* laverne.png */; };
+		A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514521C7FD1BE0000F1F5 /* milverine.png */; };
+		A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */; };
+		A34514681C7FD1BE0000F1F5 /* old-fashioned.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514541C7FD1BE0000F1F5 /* old-fashioned.png */; };
+		A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514551C7FD1BE0000F1F5 /* rumchata.png */; };
+		A345146A1C7FD1BE0000F1F5 /* shirley.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514561C7FD1BE0000F1F5 /* shirley.png */; };
+		A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514591C7FD1BE0000F1F5 /* the-calling.png */; };
+		A34514711C84DCEA0000F1F5 /* domes.png in Resources */ = {isa = PBXBuildFile; fileRef = A345146E1C84DCEA0000F1F5 /* domes.png */; };
+		A34514721C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png in Resources */ = {isa = PBXBuildFile; fileRef = A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */; };
+		A34514731C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png in Resources */ = {isa = PBXBuildFile; fileRef = A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */; };
+		A34514751C8526000000F1F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34514741C8526000000F1F5 /* LaunchScreen.xib */; };
+		A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */; };
+		A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */; };
+		A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */; };
+		A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */; };
+		A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */; };
+		A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3A6E2FF1C5FF204000F5C68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A6E2D91C5FF1DE000F5C68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A6E2F91C5FF204000F5C68;
+			remoteInfo = "Milwaukee Emoji";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3A6E3051C5FF204000F5C68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12EECF9522899D91C4F761F9 /* Pods_Milwaukee_Emoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Milwaukee_Emoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FF5ADD04B6BD25A22552E /* Pods-Milwaukee Emoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milwaukee Emoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji.release.xcconfig"; sourceTree = "<group>"; };
+		417F635D967DEB8078E5CF40 /* Pods-Milwaukee Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milwaukee Emoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji.debug.xcconfig"; sourceTree = "<group>"; };
+		6587204B5D8B28BCFB5B5A0D /* Pods-Emoji Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji Keyboard/Pods-Emoji Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		A34514401C7E72920000F1F5 /* emojiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = emojiCell.swift; sourceTree = "<group>"; };
+		A34514411C7E72920000F1F5 /* emojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = emojiCell.xib; sourceTree = "<group>"; };
+		A34514441C7FC09E0000F1F5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A34514461C7FD1BE0000F1F5 /* accordion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accordion.png; sourceTree = "<group>"; };
+		A34514471C7FD1BE0000F1F5 /* bar-dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-dice.png"; sourceTree = "<group>"; };
+		A34514481C7FD1BE0000F1F5 /* beastie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beastie.png; sourceTree = "<group>"; };
+		A34514491C7FD1BE0000F1F5 /* bratwurst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bratwurst.png; sourceTree = "<group>"; };
+		A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bronze-fonz-thumbs.png"; sourceTree = "<group>"; };
+		A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-female.png"; sourceTree = "<group>"; };
+		A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheesehead-male.png"; sourceTree = "<group>"; };
+		A345144D1C7FD1BE0000F1F5 /* dome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dome.png; sourceTree = "<group>"; };
+		A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0hoan-bridge.png"; sourceTree = "<group>"; };
+		A34514501C7FD1BE0000F1F5 /* lake-michigan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lake-michigan.png"; sourceTree = "<group>"; };
+		A34514511C7FD1BE0000F1F5 /* laverne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laverne.png; sourceTree = "<group>"; };
+		A34514521C7FD1BE0000F1F5 /* milverine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milverine.png; sourceTree = "<group>"; };
+		A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milwaukee-flag.png"; sourceTree = "<group>"; };
+		A34514541C7FD1BE0000F1F5 /* old-fashioned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "old-fashioned.png"; sourceTree = "<group>"; };
+		A34514551C7FD1BE0000F1F5 /* rumchata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumchata.png; sourceTree = "<group>"; };
+		A34514561C7FD1BE0000F1F5 /* shirley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirley.png; sourceTree = "<group>"; };
+		A34514591C7FD1BE0000F1F5 /* the-calling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-calling.png"; sourceTree = "<group>"; };
+		A345146E1C84DCEA0000F1F5 /* domes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = domes.png; sourceTree = "<group>"; };
+		A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-female.png"; sourceTree = "<group>"; };
+		A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shorts-with-melting-snow-male.png"; sourceTree = "<group>"; };
+		A34514741C8526000000F1F5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaMoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3A6E2E91C5FF1DE000F5C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3A6E2F01C5FF1DE000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Milwaukee Emoji.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A3A6E2FE1C5FF204000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		B2B5246BCD8C5AB705DEEABA /* Pods-Emoji Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji Keyboard/Pods-Emoji Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3F1226CC790814F89E3CB3 /* Pods_Emoji_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emoji_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3A6E2DE1C5FF1DE000F5C68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875DF6A2969B6C40341F4144 /* Pods_Emoji_Keyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6E2F71C5FF204000F5C68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ACB35F68DA26343BC3A905 /* Pods_Milwaukee_Emoji.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59A5BFF241F5DE2BB8F46940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC3F1226CC790814F89E3CB3 /* Pods_Emoji_Keyboard.framework */,
+				12EECF9522899D91C4F761F9 /* Pods_Milwaukee_Emoji.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B0414FDA3A42BF5DB04E054 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2B5246BCD8C5AB705DEEABA /* Pods-Emoji Keyboard.debug.xcconfig */,
+				6587204B5D8B28BCFB5B5A0D /* Pods-Emoji Keyboard.release.xcconfig */,
+				417F635D967DEB8078E5CF40 /* Pods-Milwaukee Emoji.debug.xcconfig */,
+				248FF5ADD04B6BD25A22552E /* Pods-Milwaukee Emoji.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3A6E2D81C5FF1DE000F5C68 = {
+			isa = PBXGroup;
+			children = (
+				A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */,
+				A3A6E2FB1C5FF204000F5C68 /* Milwaukee Emoji */,
+				A3A6E2E21C5FF1DE000F5C68 /* Products */,
+				9B0414FDA3A42BF5DB04E054 /* Pods */,
+				59A5BFF241F5DE2BB8F46940 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3A6E2E21C5FF1DE000F5C68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */,
+				A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6E2E41C5FF1DE000F5C68 /* AppDelegate.swift */,
+				A3A6E2E61C5FF1DE000F5C68 /* ViewController.swift */,
+				A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */,
+				A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */,
+				A3A6E2F01C5FF1DE000F5C68 /* Info.plist */,
+				A34514741C8526000000F1F5 /* LaunchScreen.xib */,
+			);
+			path = "Emoji Keyboard";
+			sourceTree = "<group>";
+		};
+		A3A6E2FB1C5FF204000F5C68 /* Milwaukee Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				A3D5FBD91C62B9A000A4EEA9 /* emojis */,
+				A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */,
+				A3A6E2FE1C5FF204000F5C68 /* Info.plist */,
+				A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */,
+				A34514401C7E72920000F1F5 /* emojiCell.swift */,
+				A34514411C7E72920000F1F5 /* emojiCell.xib */,
+				A34514441C7FC09E0000F1F5 /* Media.xcassets */,
+			);
+			path = "Milwaukee Emoji";
+			sourceTree = "<group>";
+		};
+		A3D5FBD91C62B9A000A4EEA9 /* emojis */ = {
+			isa = PBXGroup;
+			children = (
+				A345146E1C84DCEA0000F1F5 /* domes.png */,
+				A345146F1C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png */,
+				A34514701C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png */,
+				A34514461C7FD1BE0000F1F5 /* accordion.png */,
+				A34514471C7FD1BE0000F1F5 /* bar-dice.png */,
+				A34514481C7FD1BE0000F1F5 /* beastie.png */,
+				A34514491C7FD1BE0000F1F5 /* bratwurst.png */,
+				A345144A1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png */,
+				A345144B1C7FD1BE0000F1F5 /* cheesehead-female.png */,
+				A345144C1C7FD1BE0000F1F5 /* cheesehead-male.png */,
+				A345144D1C7FD1BE0000F1F5 /* dome.png */,
+				A345144F1C7FD1BE0000F1F5 /* 0hoan-bridge.png */,
+				A34514501C7FD1BE0000F1F5 /* lake-michigan.png */,
+				A34514511C7FD1BE0000F1F5 /* laverne.png */,
+				A34514521C7FD1BE0000F1F5 /* milverine.png */,
+				A34514531C7FD1BE0000F1F5 /* milwaukee-flag.png */,
+				A34514541C7FD1BE0000F1F5 /* old-fashioned.png */,
+				A34514551C7FD1BE0000F1F5 /* rumchata.png */,
+				A34514561C7FD1BE0000F1F5 /* shirley.png */,
+				A34514591C7FD1BE0000F1F5 /* the-calling.png */,
+			);
+			path = emojis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */;
+			buildPhases = (
+				98513A7B8EA1F671010D9CA5 /* [CP] Check Pods Manifest.lock */,
+				A3A6E2DD1C5FF1DE000F5C68 /* Sources */,
+				A3A6E2DE1C5FF1DE000F5C68 /* Frameworks */,
+				A3A6E2DF1C5FF1DE000F5C68 /* Resources */,
+				A3A6E3051C5FF204000F5C68 /* Embed App Extensions */,
+				FF74D49613109F7CA6CB0474 /* [CP] Embed Pods Frameworks */,
+				D4842031F809DC54D119A528 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A6E3001C5FF204000F5C68 /* PBXTargetDependency */,
+			);
+			name = "Emoji Keyboard";
+			productName = "Emoji Keyboard";
+			productReference = A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "Milwaukee Emoji" */;
+			buildPhases = (
+				F7C0030E95A65F4EAEA343C4 /* [CP] Check Pods Manifest.lock */,
+				A3A6E2F61C5FF204000F5C68 /* Sources */,
+				A3A6E2F71C5FF204000F5C68 /* Frameworks */,
+				A3A6E2F81C5FF204000F5C68 /* Resources */,
+				A21B7D65745A6CE0F9CD6344 /* [CP] Embed Pods Frameworks */,
+				28F3E600C435F550F093AAC4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Milwaukee Emoji";
+			productName = "Milwaukee Emoji";
+			productReference = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3A6E2D91C5FF1DE000F5C68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = OnMilwaukee;
+				TargetAttributes = {
+					A3A6E2E01C5FF1DE000F5C68 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8HR5CN5CA2;
+					};
+					A3A6E2F91C5FF204000F5C68 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8HR5CN5CA2;
+					};
+				};
+			};
+			buildConfigurationList = A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "Emoji Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3A6E2D81C5FF1DE000F5C68;
+			productRefGroup = A3A6E2E21C5FF1DE000F5C68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */,
+				A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3A6E2DF1C5FF1DE000F5C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */,
+				A34514751C8526000000F1F5 /* LaunchScreen.xib in Resources */,
+				A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6E2F81C5FF204000F5C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34514431C7E72920000F1F5 /* emojiCell.xib in Resources */,
+				A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */,
+				A345146A1C7FD1BE0000F1F5 /* shirley.png in Resources */,
+				A345145B1C7FD1BE0000F1F5 /* bar-dice.png in Resources */,
+				A34514681C7FD1BE0000F1F5 /* old-fashioned.png in Resources */,
+				A34514611C7FD1BE0000F1F5 /* dome.png in Resources */,
+				A345145E1C7FD1BE0000F1F5 /* bronze-fonz-thumbs.png in Resources */,
+				A345145C1C7FD1BE0000F1F5 /* beastie.png in Resources */,
+				A345145D1C7FD1BE0000F1F5 /* bratwurst.png in Resources */,
+				A34514651C7FD1BE0000F1F5 /* laverne.png in Resources */,
+				A34514711C84DCEA0000F1F5 /* domes.png in Resources */,
+				A34514641C7FD1BE0000F1F5 /* lake-michigan.png in Resources */,
+				A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */,
+				A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */,
+				A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */,
+				A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */,
+				A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */,
+				A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */,
+				A34514731C84DCEA0000F1F5 /* shorts-with-melting-snow-male.png in Resources */,
+				A34514601C7FD1BE0000F1F5 /* cheesehead-male.png in Resources */,
+				A345145F1C7FD1BE0000F1F5 /* cheesehead-female.png in Resources */,
+				A34514721C84DCEA0000F1F5 /* shorts-with-melting-snow-female.png in Resources */,
+				A34514451C7FC09E0000F1F5 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28F3E600C435F550F093AAC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98513A7B8EA1F671010D9CA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A21B7D65745A6CE0F9CD6344 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4842031F809DC54D119A528 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emoji Keyboard/Pods-Emoji Keyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C0030E95A65F4EAEA343C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF74D49613109F7CA6CB0474 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emoji Keyboard/Pods-Emoji Keyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3A6E2DD1C5FF1DE000F5C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6E2E71C5FF1DE000F5C68 /* ViewController.swift in Sources */,
+				A3A6E2E51C5FF1DE000F5C68 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6E2F61C5FF204000F5C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */,
+				A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3A6E3001C5FF204000F5C68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */;
+			targetProxy = A3A6E2FF1C5FF204000F5C68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A6E2E91C5FF1DE000F5C68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3A6E2F11C5FF1DE000F5C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3A6E2F21C5FF1DE000F5C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3A6E2F41C5FF1DE000F5C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B5246BCD8C5AB705DEEABA /* Pods-Emoji Keyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_NAME = LocaMoji;
+			};
+			name = Debug;
+		};
+		A3A6E2F51C5FF1DE000F5C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6587204B5D8B28BCFB5B5A0D /* Pods-Emoji Keyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_NAME = LocaMoji;
+			};
+			name = Release;
+		};
+		A3A6E3031C5FF204000F5C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417F635D967DEB8078E5CF40 /* Pods-Milwaukee Emoji.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard.Milwaukee-Emoji";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A3A6E3041C5FF204000F5C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248FF5ADD04B6BD25A22552E /* Pods-Milwaukee Emoji.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ONMILWAUKEE.COM, L.L.C (8HR5CN5CA2)";
+				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard.Milwaukee-Emoji";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6E2F11C5FF1DE000F5C68 /* Debug */,
+				A3A6E2F21C5FF1DE000F5C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6E2F41C5FF1DE000F5C68 /* Debug */,
+				A3A6E2F51C5FF1DE000F5C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "Milwaukee Emoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6E3031C5FF204000F5C68 /* Debug */,
+				A3A6E3041C5FF204000F5C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3A6E2D91C5FF1DE000F5C68 /* Project object */;
+}
