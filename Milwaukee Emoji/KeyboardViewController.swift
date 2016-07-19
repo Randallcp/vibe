@@ -48,6 +48,23 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
       
         emojiCollectionView.registerNib(UINib.init(nibName: "emojiCell", bundle: nil), forCellWithReuseIdentifier: "theOne")
         
+        
+        // Design
+        
+        footer.layer.cornerRadius = 8
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
@@ -64,7 +81,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     func performSearch(searchTerm: String) {
         // This would normally be network calls that return `NSData`. We'll show you how to do those soon!
         // In this case, we are using a local JSON file.
-        let apiToContact = "http://itunes.apple.com/search?term=\(searchTerm)&entity=song"
+        let apiToContact = "http://itunes.apple.com/search?term=\(searchTerm.stringByReplacingOccurrencesOfString(" ", withString: "+"))&entity=song&limit=20"
         // This code will call the iTunes top 25 movies endpoint listed above
         Alamofire.request(.GET, apiToContact).validate().responseJSON() { response in
             switch response.result {
@@ -252,7 +269,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         performSearch(searchBar.text!)
         emojiCollectionView.hidden = false
         footer.hidden = false
-        letterKeyboard.hidden = true
+        
         searchBar.endEditing(true)
         self.emojiCollectionView.reloadData()
     }
@@ -311,11 +328,18 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         performSearch(searchBar.text!)
+        emojiCollectionView.hidden = true
+        footer.hidden = true
     }
     
     func handleTap(gestureRecognizer : UIGestureRecognizer) {
         
-        // When lyric view swiped:
+        // When search bar typed:
+        emojiCollectionView.hidden = true
+        footer.hidden = true
+    }
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         emojiCollectionView.hidden = true
         footer.hidden = true
     }
