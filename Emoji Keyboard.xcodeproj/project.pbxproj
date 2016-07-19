@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1699CC411D3D691B00CADEB5 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699CC401D3D691B00CADEB5 /* Music.swift */; };
+		1699CC431D3ED00A00CADEB5 /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699CC421D3ED00A00CADEB5 /* GenreCell.swift */; };
+		1699CC451D3ED02200CADEB5 /* GenreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1699CC441D3ED02200CADEB5 /* GenreCell.xib */; };
 		51ACB35F68DA26343BC3A905 /* Pods_Milwaukee_Emoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EECF9522899D91C4F761F9 /* Pods_Milwaukee_Emoji.framework */; };
 		875DF6A2969B6C40341F4144 /* Pods_Emoji_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3F1226CC790814F89E3CB3 /* Pods_Emoji_Keyboard.framework */; };
 		A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34514401C7E72920000F1F5 /* emojiCell.swift */; };
@@ -70,6 +72,8 @@
 /* Begin PBXFileReference section */
 		12EECF9522899D91C4F761F9 /* Pods_Milwaukee_Emoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Milwaukee_Emoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1699CC401D3D691B00CADEB5 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		1699CC421D3ED00A00CADEB5 /* GenreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
+		1699CC441D3ED02200CADEB5 /* GenreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreCell.xib; sourceTree = "<group>"; };
 		248FF5ADD04B6BD25A22552E /* Pods-Milwaukee Emoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milwaukee Emoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji.release.xcconfig"; sourceTree = "<group>"; };
 		417F635D967DEB8078E5CF40 /* Pods-Milwaukee Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milwaukee Emoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji.debug.xcconfig"; sourceTree = "<group>"; };
 		6587204B5D8B28BCFB5B5A0D /* Pods-Emoji Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji Keyboard/Pods-Emoji Keyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				A34514411C7E72920000F1F5 /* emojiCell.xib */,
 				A34514441C7FC09E0000F1F5 /* Media.xcassets */,
 				1699CC401D3D691B00CADEB5 /* Music.swift */,
+				1699CC421D3ED00A00CADEB5 /* GenreCell.swift */,
+				1699CC441D3ED02200CADEB5 /* GenreCell.xib */,
 			);
 			path = "Milwaukee Emoji";
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				A34514691C7FD1BE0000F1F5 /* rumchata.png in Resources */,
 				A34514631C7FD1BE0000F1F5 /* 0hoan-bridge.png in Resources */,
 				A34514661C7FD1BE0000F1F5 /* milverine.png in Resources */,
+				1699CC451D3ED02200CADEB5 /* GenreCell.xib in Resources */,
 				A345146D1C7FD1BE0000F1F5 /* the-calling.png in Resources */,
 				A34514671C7FD1BE0000F1F5 /* milwaukee-flag.png in Resources */,
 				A345145A1C7FD1BE0000F1F5 /* accordion.png in Resources */,
@@ -463,6 +470,7 @@
 				A34514421C7E72920000F1F5 /* emojiCell.swift in Sources */,
 				A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */,
 				1699CC411D3D691B00CADEB5 /* Music.swift in Sources */,
+				1699CC431D3ED00A00CADEB5 /* GenreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

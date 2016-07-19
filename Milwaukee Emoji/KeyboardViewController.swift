@@ -27,17 +27,19 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
 
     @IBOutlet var emojiCollectionView: UICollectionView!
     
+    @IBOutlet weak var GenreLabel: UILabel!
+    @IBOutlet weak var GenreImage: UIImageView!
+    
+    @IBOutlet weak var GenreCollectionView: UICollectionView!
     @IBOutlet weak var footer: UIView!
     @IBOutlet weak var letterKeyboard: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet var deleteButton: UIButton!
     @IBOutlet var nextKeyboardButton: UIButton!
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
     
-        // Add custom view sizing constraints here
-    }
+ 
+ 
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,23 +54,14 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         // Design
         
         footer.layer.cornerRadius = 8
+        emojiCollectionView.layer.cornerRadius = 8
+        searchBar.layer.cornerRadius = 25
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
+      
         self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
-        self.deleteButton.addTarget(self.textDocumentProxy, action: "deleteBackward", forControlEvents: .TouchUpInside)
+       
         
         tapRec.addTarget(self, action: "handleTap")
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)) )
@@ -77,6 +70,12 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         searchBar.delegate = self
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let constraint = NSLayoutConstraint(item: self.view, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0.0, constant: 250)
+        self.view.addConstraint(constraint)
+    }
     
     func performSearch(searchTerm: String) {
         // This would normally be network calls that return `NSData`. We'll show you how to do those soon!
@@ -128,6 +127,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.emojiCollectionView {
         if searchBar.text! == "" {
             print("NO TEXT")
 
@@ -137,10 +137,15 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
             print("INPUTTT!!!")
 
         return allSongs.count
-    }
+            }
+            }
+        else {
+            return 10
+        }
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        if collectionView == self.emojiCollectionView {
         let cell : emojiCell =  emojiCollectionView.dequeueReusableCellWithReuseIdentifier("theOne", forIndexPath: indexPath) as! emojiCell
         if searchBar.text! == "" {
             cell.artist.text = trending[indexPath.row].artist
@@ -153,7 +158,10 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         cell.copiedView.layer.cornerRadius = 8
         cell.copiedView.layer.masksToBounds = true
         return cell
-        
+        }
+        else {
+            
+        }
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -266,6 +274,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     }
     
     @IBAction func searchPressed(sender: UIButton) {
+        
         performSearch(searchBar.text!)
         emojiCollectionView.hidden = false
         footer.hidden = false
