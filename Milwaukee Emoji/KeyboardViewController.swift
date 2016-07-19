@@ -17,7 +17,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     let emojiList : [String] = ["test1", "test2"]
     let trending: [Music] = []
     var allSongs: [Music] = []
-    
+    var Images: [UIImage] = [UIImage(named: "Recent")!,  UIImage(named: "Hot")!, UIImage(named: "Pop")!, UIImage(named: "Rock")!, UIImage(named: "Rap")!, UIImage(named: "Country")!, UIImage(named: "RB")!, UIImage(named: "HipHop")!, UIImage(named: "Folk")!, UIImage(named: "HeavyMetal")!, UIImage(named: "Funk")!, UIImage(named: "Reggae")!, UIImage(named: "Jazz")!]
+    var Labels: [String] = ["Recent", "Hot", "Pop", "Rock", "Rap", "Country", "R&B", "Hip Hop", "Folk", "Heavy Metal", "Funk", "Reggae", "Jazz"]
     let tapRec = UITapGestureRecognizer()
 
 
@@ -49,6 +50,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
       
         emojiCollectionView.registerNib(UINib.init(nibName: "emojiCell", bundle: nil), forCellWithReuseIdentifier: "theOne")
+        GenreCollectionView.registerNib(UINib.init(nibName: "GenreCell", bundle: nil), forCellWithReuseIdentifier: "theGenre")
         
         
         // Design
@@ -160,6 +162,11 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         return cell
         }
         else {
+            let cell : GenreCell =  GenreCollectionView.dequeueReusableCellWithReuseIdentifier("theGenre", forIndexPath: indexPath) as! GenreCell
+            
+                cell.GenreImage.image = Images[indexPath.row]
+                cell.Label.text = Labels[indexPath.row]
+                return cell
             
         }
     }
@@ -167,7 +174,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let selectedCell : emojiCell = emojiCollectionView.cellForItemAtIndexPath(indexPath) as! emojiCell
         
-        
+        if collectionView == self.emojiCollectionView {
         UIView.animateWithDuration(0.7, animations: { () -> Void in
             selectedCell.copiedView.hidden = false
             selectedCell.copiedView.alpha = 1;
@@ -177,9 +184,14 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
                     }, completion: { (completed) -> Void in
                         selectedCell.copiedView.hidden = true
                 })
+            }
+            selectedCell.copiedView.hidden = false
+
         }
+            else {
+                //filter search depending on icon pressed
+            }
         
-        selectedCell.copiedView.hidden = false
     }
     
     
@@ -285,19 +297,39 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
 
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        if collectionView == self.emojiCollectionView {
         return CGSizeMake(160, 78);
+        }
+        else {
+            return CGSizeMake(62, 69);
+        }
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 0;
+        if collectionView == self.emojiCollectionView {
+            return 0;
+        }
+        else {
+            return 0;
+        }
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+        if collectionView == self.emojiCollectionView {
         return 0;
+        }
+        else {
+            return 0;
+        }
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        if collectionView == self.emojiCollectionView {
         return UIEdgeInsetsMake(0, 0, 0, 0);
+        }
+        else {
+            return UIEdgeInsetsMake(0, 0, 0, 0);
+        }
     }
 
     override func didReceiveMemoryWarning() {
