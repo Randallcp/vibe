@@ -15,5 +15,6 @@ target 'Milwaukee Emoji' do
 
   # Pods for Milwaukee Emoji
 pod ’SwiftyJSON’
+pod ‘Alamofire’
 
 end

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Emoji Keyboard.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BEB683A20F04FCF3196752109FF2DFB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2AB5EC4E57ED3769AC1068CAD3FC87FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>56C81ABECB50B79ED3DC9B0C2F6D8352</key>
+		<key>764BD593F6877175EDAE332C90D1D59C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F15CCAAE385A2C4074B919D0CE4333D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

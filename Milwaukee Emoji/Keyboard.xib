@@ -4,11 +4,47 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="VarelaRound-Regular.otf">
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+            <string>VarelaRound</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="Milwaukee_Emoji" customModuleProvider="target">
             <connections>
                 <outlet property="deleteButton" destination="fls-Gn-dgO" id="Gvm-3d-og6"/>
                 <outlet property="emojiCollectionView" destination="vD4-BB-dZr" id="14g-9j-ADS"/>
+                <outlet property="footer" destination="bGZ-eg-HMk" id="OdA-C6-t9h"/>
+                <outlet property="letterKeyboard" destination="LEX-Z6-WEn" id="PLG-Dc-bfd"/>
                 <outlet property="nextKeyboardButton" destination="Mkl-mX-JxR" id="wLN-Ew-4RV"/>
                 <outlet property="searchBar" destination="1Ts-aB-64M" id="Nn3-u9-ahA"/>
             </connections>
@@ -32,7 +68,7 @@
                         <outlet property="delegate" destination="-1" id="hPl-pU-1fI"/>
                     </connections>
                 </collectionView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-eg-HMk">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-eg-HMk" userLabel="Footer">
                     <rect key="frame" x="0.0" y="211" width="320" height="44"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fls-Gn-dgO">
@@ -55,6 +91,346 @@
                         <constraint firstAttribute="trailing" secondItem="fls-Gn-dgO" secondAttribute="trailing" constant="9" id="oaV-ev-j7X"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEX-Z6-WEn" userLabel="Letter Keyboard">
+                    <rect key="frame" x="-1" y="44" width="320" height="211"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNm-5t-Hha">
+                            <rect key="frame" x="12" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="Q">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="qPressed:" destination="-1" eventType="touchUpInside" id="jsW-87-06h"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owM-oX-kp7">
+                            <rect key="frame" x="102" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="R">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rPressed:" destination="-1" eventType="touchUpInside" id="d55-2J-ZHK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-OC-PzH">
+                            <rect key="frame" x="72" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="E">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="ePressed:" destination="-1" eventType="touchUpInside" id="LeU-GD-Rtm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fE-DL-YTG">
+                            <rect key="frame" x="132" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="T">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tPressed:" destination="-1" eventType="touchUpInside" id="JqB-zG-VPo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxn-em-cPb">
+                            <rect key="frame" x="222" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="I">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="iPressed:" destination="-1" eventType="touchUpInside" id="B9f-DT-5oi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLr-Uh-Iuz">
+                            <rect key="frame" x="192" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="U">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="uPressed:" destination="-1" eventType="touchUpInside" id="Ua1-S8-Kdv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J03-V8-nJt">
+                            <rect key="frame" x="162" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="Y">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="yPressed:" destination="-1" eventType="touchUpInside" id="vKR-sm-gL7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsa-la-q4s">
+                            <rect key="frame" x="282" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="P">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pPressed:" destination="-1" eventType="touchUpInside" id="EpQ-XO-Bfl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-cL-xZE">
+                            <rect key="frame" x="252" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="O">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="oPressed:" destination="-1" eventType="touchUpInside" id="gZS-sy-axK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-Ni-Dtp">
+                            <rect key="frame" x="42" y="15" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="W">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="wPressed:" destination="-1" eventType="touchUpInside" id="dVs-Yj-NdP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0e-Dk-LeY">
+                            <rect key="frame" x="56" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="S">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sPressed:" destination="-1" eventType="touchUpInside" id="Oxn-zg-hSi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEn-aN-HAv">
+                            <rect key="frame" x="26" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="A">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="aPressed:" destination="-1" eventType="touchUpInside" id="sBc-dE-qqp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HG6-ub-fUC">
+                            <rect key="frame" x="116" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="F">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="fPressed:" destination="-1" eventType="touchUpInside" id="zcz-IW-uXG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-9D-7Z5">
+                            <rect key="frame" x="86" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="D">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dPressed:" destination="-1" eventType="touchUpInside" id="BqN-Ja-y0R"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnh-6a-K58">
+                            <rect key="frame" x="176" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="H">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="hPressed:" destination="-1" eventType="touchUpInside" id="IPp-vh-xP5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-DC-xW4">
+                            <rect key="frame" x="146" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="G">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="gPressed:" destination="-1" eventType="touchUpInside" id="QKz-bd-ATX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC6-BY-IxO">
+                            <rect key="frame" x="236" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="K">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="kPressed:" destination="-1" eventType="touchUpInside" id="4tY-KG-7bJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVW-OX-lGz">
+                            <rect key="frame" x="206" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="J">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jPressed:" destination="-1" eventType="touchUpInside" id="AmN-y5-P0k"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-8I-myL">
+                            <rect key="frame" x="266" y="51" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="L">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="lPressed:" destination="-1" eventType="touchUpInside" id="egp-RN-am0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-0W-iPn">
+                            <rect key="frame" x="86" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="X">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="xPressed:" destination="-1" eventType="touchUpInside" id="ThD-aQ-l3j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaE-d5-oAB">
+                            <rect key="frame" x="56" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="Z">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="zPressed:" destination="-1" eventType="touchUpInside" id="24u-CI-a5S"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCG-Ig-YtP">
+                            <rect key="frame" x="146" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="V">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="vPressed:" destination="-1" eventType="touchUpInside" id="4sx-ha-2zA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFU-1N-KVc">
+                            <rect key="frame" x="116" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="C">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cPressed:" destination="-1" eventType="touchUpInside" id="WKA-6w-plm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-0G-wlr">
+                            <rect key="frame" x="176" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="B">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bPressed:" destination="-1" eventType="touchUpInside" id="D1S-A7-tfu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k3-qw-OU6">
+                            <rect key="frame" x="236" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="M">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="mPressed:" destination="-1" eventType="touchUpInside" id="Vmz-Bp-6VZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbi-JV-vI7">
+                            <rect key="frame" x="219" y="123" width="91" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="Search">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="searchPressed:" destination="-1" eventType="touchUpInside" id="KSO-H6-apV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbF-u4-f1D">
+                            <rect key="frame" x="75" y="123" width="142" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="spacePressed:" destination="-1" eventType="touchUpInside" id="Exd-Ln-8Tx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMD-66-Kvg">
+                            <rect key="frame" x="266" y="87" width="44" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="←">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backSpacePressed:" destination="-1" eventType="touchUpInside" id="K6Y-R3-Dyb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaI-SJ-9Fb">
+                            <rect key="frame" x="12" y="123" width="61" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="plusPressed:" destination="-1" eventType="touchUpInside" id="ud9-ty-89c"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVt-k9-AU1">
+                            <rect key="frame" x="206" y="87" width="28" height="34"/>
+                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="N">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="nPressed:" destination="-1" eventType="touchUpInside" id="9Fb-0c-hVm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="zQ4-kb-ZLz" appends="YES" id="Xtn-oZ-MQw"/>
+                    </connections>
+                </view>
                 <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ts-aB-64M">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <textInputTraits key="textInputTraits"/>
@@ -73,6 +449,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="245" y="214.5"/>
         </view>
+        <tapGestureRecognizer id="zQ4-kb-ZLz"/>
     </objects>
     <resources>
         <image name="backspace-44x44" width="44" height="44"/>

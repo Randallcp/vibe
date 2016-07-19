@@ -16,8 +16,9 @@ struct Music {
     var url: String
     
     init(json: JSON) {
-        self.song = json["results"]["trackName"].stringValue
-        self.artist = json["results"]["artistName"].stringValue
-        self.url = json["results"]["previewUrl"].stringValue
+        self.song = json["trackName"].stringValue
+        self.artist = json["artistName"].stringValue
+        self.url = json["previewUrl"].stringValue
     }
+    
 }
