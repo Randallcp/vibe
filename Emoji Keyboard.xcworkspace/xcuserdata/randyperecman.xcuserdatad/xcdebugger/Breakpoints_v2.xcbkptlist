@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Milwaukee Emoji/KeyboardViewController.swift"
-            timestampString = "490731365.103602"
+            timestampString = "490732016.499926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "426"
-            endingLineNumber = "426">
+            startingLineNumber = "436"
+            endingLineNumber = "436">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Milwaukee Emoji/KeyboardViewController.swift"
-            timestampString = "490731365.103602"
+            timestampString = "490732016.499926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "407"
-            endingLineNumber = "407">
+            startingLineNumber = "417"
+            endingLineNumber = "417">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

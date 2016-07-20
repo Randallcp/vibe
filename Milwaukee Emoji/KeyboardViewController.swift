@@ -56,6 +56,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         searchBar.layer.cornerRadius = 25
         
         
+        
         // Design
         
         footer.layer.cornerRadius = 8
@@ -99,6 +100,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
                    // print(allMusicData)
                     
 //                    Music(json: allMusicData[i])
+                    self.allSongs = []
                     var i = 0
                     while i < allMusicData.count {
 //                        print(allMusicData[i]["trackName"])
@@ -179,6 +181,14 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         if collectionView == self.emojiCollectionView {
             let selectedCell : emojiCell = emojiCollectionView.cellForItemAtIndexPath(indexPath) as! emojiCell
+            if searchBar.text! == "" {
+                UIPasteboard.generalPasteboard().string = trending[indexPath.row].url
+
+            }
+            else {
+            UIPasteboard.generalPasteboard().string = allSongs[indexPath.row].url
+            }
+            
 
         UIView.animateWithDuration(0.7, animations: { () -> Void in
             selectedCell.copiedView.hidden = false
@@ -305,6 +315,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         
         searchBar.endEditing(true)
         self.emojiCollectionView.reloadData()
+        print(allSongs)
     }
 
     
