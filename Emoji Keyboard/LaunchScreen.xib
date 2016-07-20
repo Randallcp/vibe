@@ -11,20 +11,30 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8vk-sB-wHb">
-                    <rect key="frame" x="118" y="117" width="365" height="365"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="g3F-Pc-9wx">
+                    <rect key="frame" x="200" y="200" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="WHK-6Z-cVc"/>
+                        <constraint firstAttribute="width" constant="200" id="Ywp-04-mZZ"/>
+                    </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beta 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-ih-hOC">
+                    <rect key="frame" x="271" y="349" width="59" height="28"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                    <color key="textColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="8vk-sB-wHb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EYe-Pe-92N"/>
-                <constraint firstItem="8vk-sB-wHb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dEh-I8-dle"/>
-                <constraint firstItem="8vk-sB-wHb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="117" id="gZR-Iq-EC8"/>
-                <constraint firstItem="8vk-sB-wHb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="118" id="pul-sA-7PS"/>
+                <constraint firstAttribute="bottom" secondItem="g3F-Pc-9wx" secondAttribute="bottom" constant="200" id="IXU-7h-swW"/>
+                <constraint firstAttribute="bottom" secondItem="GKE-ih-hOC" secondAttribute="bottom" constant="223" id="M2U-Ms-Dak"/>
+                <constraint firstItem="g3F-Pc-9wx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XGe-CL-4gt"/>
+                <constraint firstItem="GKE-ih-hOC" firstAttribute="centerX" secondItem="g3F-Pc-9wx" secondAttribute="centerX" id="Z8t-0U-cA2"/>
             </constraints>
         </view>
     </objects>
     <resources>
-        <image name="LaunchLogo" width="413" height="648"/>
+        <image name="logo" width="4491" height="2360"/>
     </resources>
 </document>

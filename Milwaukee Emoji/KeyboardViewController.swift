@@ -18,7 +18,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     let trending: [Music] = []
     var allSongs: [Music] = []
     var Images: [UIImage] = [UIImage(named: "Pop")!, UIImage(named: "Rock")!, UIImage(named: "Rap")!, UIImage(named: "Country")!, UIImage(named: "RB")!, UIImage(named: "HipHop")!, UIImage(named: "Folk")!, UIImage(named: "HeavyMetal")!, UIImage(named: "Funk")!, UIImage(named: "Reggae")!, UIImage(named: "Jazz")!]
-    var Labels: [String] = ["Pop", "Rock", "Rap", "Country", "R&B", "Hip Hop", "Folk", "Heavy Metal", "Funk", "Reggae", "Jazz"]
+    var Labels: [String] = ["Pop", "Rock", "Rap", "Country", "R&B", "Hip Hop", "Folk", "Metal", "Funk", "Reggae", "Jazz"]
     var ColorArray =  [PopColor, RockColor, RapColor, CountryColor, RBColor, HipHopColor, FolkColor, HeavyMetalColor, FunkColor, ReggaeColor, JazzColor]
     let tapRec = UITapGestureRecognizer()
 
