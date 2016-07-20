@@ -19,6 +19,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     var allSongs: [Music] = []
     var Images: [UIImage] = [UIImage(named: "Recent")!,  UIImage(named: "Hot")!, UIImage(named: "Pop")!, UIImage(named: "Rock")!, UIImage(named: "Rap")!, UIImage(named: "Country")!, UIImage(named: "RB")!, UIImage(named: "HipHop")!, UIImage(named: "Folk")!, UIImage(named: "HeavyMetal")!, UIImage(named: "Funk")!, UIImage(named: "Reggae")!, UIImage(named: "Jazz")!]
     var Labels: [String] = ["Recent", "Hot", "Pop", "Rock", "Rap", "Country", "R&B", "Hip Hop", "Folk", "Heavy Metal", "Funk", "Reggae", "Jazz"]
+    var ColorArray =  [RecentColor, HotColor, PopColor, RockColor, RapColor, CountryColor, RBColor, HipHopColor, FolkColor, HeavyMetalColor, FunkColor, ReggaeColor, JazzColor]
     let tapRec = UITapGestureRecognizer()
 
 
@@ -38,7 +39,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     @IBOutlet var nextKeyboardButton: UIButton!
     
  
- 
+ let searchBarController = UISearchController()
 
     
     override func viewDidLoad() {
@@ -52,6 +53,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         emojiCollectionView.registerNib(UINib.init(nibName: "emojiCell", bundle: nil), forCellWithReuseIdentifier: "theOne")
         GenreCollectionView.registerNib(UINib.init(nibName: "GenreCell", bundle: nil), forCellWithReuseIdentifier: "theGenre")
         
+        searchBar.layer.cornerRadius = 25
+        
         
         // Design
         
@@ -59,7 +62,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         emojiCollectionView.layer.cornerRadius = 8
         searchBar.layer.cornerRadius = 25
         
-        
+        letterKeyboard.hidden = true
       
         self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
@@ -75,7 +78,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let constraint = NSLayoutConstraint(item: self.view, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0.0, constant: 250)
+        let constraint = NSLayoutConstraint(item: self.view, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0.0, constant: 350)
         self.view.addConstraint(constraint)
     }
     
@@ -166,15 +169,17 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
             
                 cell.GenreImage.image = Images[indexPath.row]
                 cell.Label.text = Labels[indexPath.row]
+            cell.view.backgroundColor = ColorArray[indexPath.row]
                 return cell
             
         }
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell : emojiCell = emojiCollectionView.cellForItemAtIndexPath(indexPath) as! emojiCell
         
         if collectionView == self.emojiCollectionView {
+            let selectedCell : emojiCell = emojiCollectionView.cellForItemAtIndexPath(indexPath) as! emojiCell
+
         UIView.animateWithDuration(0.7, animations: { () -> Void in
             selectedCell.copiedView.hidden = false
             selectedCell.copiedView.alpha = 1;
@@ -190,6 +195,13 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         }
             else {
                 //filter search depending on icon pressed
+            let selectedCell : GenreCell = GenreCollectionView.cellForItemAtIndexPath(indexPath) as! GenreCell
+            searchBar.text = selectedCell.Label.text
+            performSearch(searchBar.text!)
+            searchBar.endEditing(true)
+            self.emojiCollectionView.reloadData()
+
+            
             }
         
     }
@@ -371,6 +383,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         performSearch(searchBar.text!)
         emojiCollectionView.hidden = true
         footer.hidden = true
+        letterKeyboard.hidden = false
+
     }
     
     func handleTap(gestureRecognizer : UIGestureRecognizer) {
@@ -378,11 +392,14 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         // When search bar typed:
         emojiCollectionView.hidden = true
         footer.hidden = true
+        letterKeyboard.hidden = false
+
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         emojiCollectionView.hidden = true
         footer.hidden = true
+        letterKeyboard.hidden = false
     }
    
 }

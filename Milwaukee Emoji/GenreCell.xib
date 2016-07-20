@@ -20,16 +20,22 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kee-De-G2n">
-                        <rect key="frame" x="6" y="5" width="50" height="50"/>
-                        <color key="backgroundColor" red="0.032141359060402684" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sL5-4j-hXo">
+                        <rect key="frame" x="6" y="4" width="50" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kee-De-G2n">
+                                <rect key="frame" x="10" y="12" width="30" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25414219798657717" green="1" blue="0.10725146812080537" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <connections>
-                <outlet property="GenreImage" destination="kee-De-G2n" id="MTG-Wa-V29"/>
+                <outlet property="GenreImage" destination="kee-De-G2n" id="sBl-8L-wqR"/>
                 <outlet property="Label" destination="Pl9-Ve-p6C" id="wGC-gC-LNp"/>
+                <outlet property="view" destination="sL5-4j-hXo" id="P5i-yz-red"/>
             </connections>
             <point key="canvasLocation" x="333" y="250.5"/>
         </collectionViewCell>
