@@ -186,7 +186,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
 
             }
             else {
-            UIPasteboard.generalPasteboard().string = allSongs[indexPath.row].url
+                UIPasteboard.generalPasteboard().string = "vibe | \(allSongs[indexPath.row].song) by \(allSongs[indexPath.row].artist) \n \(allSongs[indexPath.row].url)"
             }
             
 
@@ -312,7 +312,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         performSearch(searchBar.text!)
         emojiCollectionView.hidden = false
         footer.hidden = false
-        
+        letterKeyboard.hidden = true
         searchBar.endEditing(true)
         self.emojiCollectionView.reloadData()
         print(allSongs)

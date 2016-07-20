@@ -428,23 +428,6 @@
                         <outlet property="delegate" destination="-1" id="hPl-pU-1fI"/>
                     </connections>
                 </collectionView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rmp-n6-cc6">
-                    <rect key="frame" x="0.0" y="54" width="320" height="69"/>
-                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="69" id="OU1-6r-XBw"/>
-                    </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5MH-YD-3Bn">
-                        <size key="itemSize" width="62" height="69"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="idz-L0-Ppo"/>
-                        <outlet property="delegate" destination="-1" id="svg-CR-TbN"/>
-                    </connections>
-                </collectionView>
                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-eg-HMk" userLabel="Footer">
                     <rect key="frame" x="5" y="310" width="311" height="36"/>
                     <subviews>
@@ -477,6 +460,23 @@
                         <constraint firstItem="Mkl-mX-JxR" firstAttribute="centerY" secondItem="bGZ-eg-HMk" secondAttribute="centerY" id="dQW-yQ-6ri"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rmp-n6-cc6">
+                    <rect key="frame" x="0.0" y="50" width="320" height="69"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="OU1-6r-XBw"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5MH-YD-3Bn">
+                        <size key="itemSize" width="62" height="69"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="idz-L0-Ppo"/>
+                        <outlet property="delegate" destination="-1" id="svg-CR-TbN"/>
+                    </connections>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
