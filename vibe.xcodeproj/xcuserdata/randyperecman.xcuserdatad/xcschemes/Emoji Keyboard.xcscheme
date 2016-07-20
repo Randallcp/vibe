@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
                BuildableName = "LocaMoji.app"
-               BlueprintName = "Emoji Keyboard"
+               BlueprintName = "vibe keyboard"
                ReferencedContainer = "container:vibe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
-            BlueprintName = "Emoji Keyboard"
+            BlueprintName = "vibe keyboard"
             ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
-            BlueprintName = "Emoji Keyboard"
+            BlueprintName = "vibe keyboard"
             ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
-            BlueprintName = "Emoji Keyboard"
+            BlueprintName = "vibe keyboard"
             ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -42,7 +42,7 @@
 		A3A6E2EA1C5FF1DE000F5C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2E81C5FF1DE000F5C68 /* Main.storyboard */; };
 		A3A6E2EC1C5FF1DE000F5C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */; };
 		A3A6E2FD1C5FF204000F5C68 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */; };
-		A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3A6E3011C5FF204000F5C68 /* vibe.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3A6E2FA1C5FF204000F5C68 /* vibe.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A3D5FB7B1C61679E00A4EEA9 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A3A6E3011C5FF204000F5C68 /* Milwaukee Emoji.appex in Embed App Extensions */,
+				A3A6E3011C5FF204000F5C68 /* vibe.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +110,7 @@
 		A3A6E2E91C5FF1DE000F5C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3A6E2EB1C5FF1DE000F5C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3A6E2F01C5FF1DE000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Milwaukee Emoji.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6E2FA1C5FF204000F5C68 /* vibe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = vibe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6E2FC1C5FF204000F5C68 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		A3A6E2FE1C5FF204000F5C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3D5FB7A1C61679E00A4EEA9 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */,
-				A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */,
+				A3A6E2FA1C5FF204000F5C68 /* vibe.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */ = {
+		A3A6E2E01C5FF1DE000F5C68 /* vibe keyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */;
+			buildConfigurationList = A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "vibe keyboard" */;
 			buildPhases = (
 				98513A7B8EA1F671010D9CA5 /* [CP] Check Pods Manifest.lock */,
 				A3A6E2DD1C5FF1DE000F5C68 /* Sources */,
@@ -257,14 +257,14 @@
 			dependencies = (
 				A3A6E3001C5FF204000F5C68 /* PBXTargetDependency */,
 			);
-			name = "Emoji Keyboard";
+			name = "vibe keyboard";
 			productName = "Emoji Keyboard";
 			productReference = A3A6E2E11C5FF1DE000F5C68 /* LocaMoji.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */ = {
+		A3A6E2F91C5FF204000F5C68 /* vibe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "Milwaukee Emoji" */;
+			buildConfigurationList = A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "vibe" */;
 			buildPhases = (
 				F7C0030E95A65F4EAEA343C4 /* [CP] Check Pods Manifest.lock */,
 				A3A6E2F61C5FF204000F5C68 /* Sources */,
@@ -277,9 +277,9 @@
 			);
 			dependencies = (
 			);
-			name = "Milwaukee Emoji";
+			name = vibe;
 			productName = "Milwaukee Emoji";
-			productReference = A3A6E2FA1C5FF204000F5C68 /* Milwaukee Emoji.appex */;
+			productReference = A3A6E2FA1C5FF204000F5C68 /* vibe.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -290,7 +290,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = OnMilwaukee;
+				ORGANIZATIONNAME = vibe;
 				TargetAttributes = {
 					A3A6E2E01C5FF1DE000F5C68 = {
 						CreatedOnToolsVersion = 7.2;
@@ -315,8 +315,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3A6E2E01C5FF1DE000F5C68 /* Emoji Keyboard */,
-				A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */,
+				A3A6E2E01C5FF1DE000F5C68 /* vibe keyboard */,
+				A3A6E2F91C5FF204000F5C68 /* vibe */,
 			);
 		};
 /* End PBXProject section */
@@ -485,7 +485,7 @@
 /* Begin PBXTargetDependency section */
 		A3A6E3001C5FF204000F5C68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A3A6E2F91C5FF204000F5C68 /* Milwaukee Emoji */;
+			target = A3A6E2F91C5FF204000F5C68 /* vibe */;
 			targetProxy = A3A6E2FF1C5FF204000F5C68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -595,7 +595,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibe;
 				PRODUCT_NAME = LocaMoji;
 				PROVISIONING_PROFILE = "";
 			};
@@ -611,7 +611,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibe;
 				PRODUCT_NAME = LocaMoji;
 				PROVISIONING_PROFILE = "";
 			};
@@ -626,10 +626,11 @@
 				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard.Milwaukee-Emoji";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibe.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -642,10 +643,11 @@
 				INFOPLIST_FILE = "Milwaukee Emoji/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "onmilwaukee.Emoji-Keyboard.Milwaukee-Emoji";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibe.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -661,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */ = {
+		A3A6E2F31C5FF1DE000F5C68 /* Build configuration list for PBXNativeTarget "vibe keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3A6E2F41C5FF1DE000F5C68 /* Debug */,
@@ -670,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "Milwaukee Emoji" */ = {
+		A3A6E3021C5FF204000F5C68 /* Build configuration list for PBXNativeTarget "vibe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3A6E3031C5FF204000F5C68 /* Debug */,

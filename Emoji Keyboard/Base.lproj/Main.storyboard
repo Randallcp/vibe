@@ -36,10 +36,10 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="q71-66-ZMk"/>
-                                        <exclude reference="2Fe-w4-KkR"/>
-                                        <exclude reference="v2f-yE-NvW"/>
                                         <exclude reference="1Zo-XM-bf4"/>
+                                        <exclude reference="2Fe-w4-KkR"/>
+                                        <exclude reference="q71-66-ZMk"/>
+                                        <exclude reference="v2f-yE-NvW"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -91,18 +91,18 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Cb1-rr-fIs"/>
-                                <exclude reference="yOl-gv-qc9"/>
-                                <exclude reference="jHE-ZS-pXB"/>
-                                <exclude reference="YQ5-7c-Qos"/>
-                                <exclude reference="Hz3-8z-EbK"/>
                                 <exclude reference="0i9-TL-v6h"/>
+                                <exclude reference="Cb1-rr-fIs"/>
+                                <exclude reference="Hz3-8z-EbK"/>
+                                <exclude reference="YQ5-7c-Qos"/>
+                                <exclude reference="jHE-ZS-pXB"/>
+                                <exclude reference="yOl-gv-qc9"/>
                                 <exclude reference="6f5-rD-zIM"/>
-                                <exclude reference="pnp-Y2-0Jv"/>
-                                <exclude reference="bec-Dt-dQv"/>
-                                <exclude reference="YMh-Fm-FPI"/>
-                                <exclude reference="onD-eH-Hc5"/>
                                 <exclude reference="V1K-uh-nJl"/>
+                                <exclude reference="YMh-Fm-FPI"/>
+                                <exclude reference="bec-Dt-dQv"/>
+                                <exclude reference="onD-eH-Hc5"/>
+                                <exclude reference="pnp-Y2-0Jv"/>
                                 <exclude reference="q7h-Zf-qVM"/>
                                 <exclude reference="ArT-Fz-Kd6"/>
                                 <exclude reference="HOz-WO-OfW"/>

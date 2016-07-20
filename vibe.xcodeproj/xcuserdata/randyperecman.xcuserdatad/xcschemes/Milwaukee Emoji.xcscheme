@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3A6E2F91C5FF204000F5C68"
-               BuildableName = "Milwaukee Emoji.appex"
-               BlueprintName = "Milwaukee Emoji"
+               BuildableName = "vibe.appex"
+               BlueprintName = "vibe"
                ReferencedContainer = "container:vibe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,7 +31,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
                BuildableName = "LocaMoji.app"
-               BlueprintName = "Emoji Keyboard"
+               BlueprintName = "vibe keyboard"
                ReferencedContainer = "container:vibe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -48,8 +48,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2F91C5FF204000F5C68"
-            BuildableName = "Milwaukee Emoji.appex"
-            BlueprintName = "Milwaukee Emoji"
+            BuildableName = "vibe.appex"
+            BlueprintName = "vibe"
             ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,7 +77,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
-            BlueprintName = "Emoji Keyboard"
+            BlueprintName = "vibe keyboard"
             ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -97,7 +97,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
-            BlueprintName = "Emoji Keyboard"
+            BlueprintName = "vibe keyboard"
             ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
