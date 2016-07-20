@@ -76,6 +76,7 @@
 		1699CC421D3ED00A00CADEB5 /* GenreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		1699CC441D3ED02200CADEB5 /* GenreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreCell.xib; sourceTree = "<group>"; };
 		1699CC6D1D3FECCF00CADEB5 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1699CC6F1D40178400CADEB5 /* VarelaRound-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.otf"; sourceTree = "<group>"; };
 		248FF5ADD04B6BD25A22552E /* Pods-Milwaukee Emoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milwaukee Emoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji.release.xcconfig"; sourceTree = "<group>"; };
 		417F635D967DEB8078E5CF40 /* Pods-Milwaukee Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milwaukee Emoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Milwaukee Emoji/Pods-Milwaukee Emoji.debug.xcconfig"; sourceTree = "<group>"; };
 		6587204B5D8B28BCFB5B5A0D /* Pods-Emoji Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji Keyboard/Pods-Emoji Keyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +161,7 @@
 		A3A6E2D81C5FF1DE000F5C68 = {
 			isa = PBXGroup;
 			children = (
+				1699CC6F1D40178400CADEB5 /* VarelaRound-Regular.otf */,
 				A3A6E2E31C5FF1DE000F5C68 /* Emoji Keyboard */,
 				A3A6E2FB1C5FF204000F5C68 /* Milwaukee Emoji */,
 				A3A6E2E21C5FF1DE000F5C68 /* Products */,

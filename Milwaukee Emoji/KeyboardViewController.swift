@@ -17,9 +17,9 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     let emojiList : [String] = ["test1", "test2"]
     let trending: [Music] = []
     var allSongs: [Music] = []
-    var Images: [UIImage] = [UIImage(named: "Recent")!,  UIImage(named: "Hot")!, UIImage(named: "Pop")!, UIImage(named: "Rock")!, UIImage(named: "Rap")!, UIImage(named: "Country")!, UIImage(named: "RB")!, UIImage(named: "HipHop")!, UIImage(named: "Folk")!, UIImage(named: "HeavyMetal")!, UIImage(named: "Funk")!, UIImage(named: "Reggae")!, UIImage(named: "Jazz")!]
-    var Labels: [String] = ["Recent", "Hot", "Pop", "Rock", "Rap", "Country", "R&B", "Hip Hop", "Folk", "Heavy Metal", "Funk", "Reggae", "Jazz"]
-    var ColorArray =  [RecentColor, HotColor, PopColor, RockColor, RapColor, CountryColor, RBColor, HipHopColor, FolkColor, HeavyMetalColor, FunkColor, ReggaeColor, JazzColor]
+    var Images: [UIImage] = [UIImage(named: "Pop")!, UIImage(named: "Rock")!, UIImage(named: "Rap")!, UIImage(named: "Country")!, UIImage(named: "RB")!, UIImage(named: "HipHop")!, UIImage(named: "Folk")!, UIImage(named: "HeavyMetal")!, UIImage(named: "Funk")!, UIImage(named: "Reggae")!, UIImage(named: "Jazz")!]
+    var Labels: [String] = ["Pop", "Rock", "Rap", "Country", "R&B", "Hip Hop", "Folk", "Heavy Metal", "Funk", "Reggae", "Jazz"]
+    var ColorArray =  [PopColor, RockColor, RapColor, CountryColor, RBColor, HipHopColor, FolkColor, HeavyMetalColor, FunkColor, ReggaeColor, JazzColor]
     let tapRec = UITapGestureRecognizer()
 
 
@@ -64,6 +64,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         searchBar.layer.cornerRadius = 25
         
         letterKeyboard.hidden = true
+        emojiCollectionView.hidden = false
+        footer.hidden = false
       
         self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
@@ -321,7 +323,7 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         if collectionView == self.emojiCollectionView {
-        return CGSizeMake(160, 78);
+        return CGSizeMake(170, 78);
         }
         else {
             return CGSizeMake(62, 69);

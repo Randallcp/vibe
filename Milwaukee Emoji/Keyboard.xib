@@ -36,6 +36,7 @@
             <string>VarelaRound</string>
             <string>VarelaRound</string>
             <string>VarelaRound</string>
+            <string>VarelaRound</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -54,337 +55,353 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEX-Z6-WEn" userLabel="Letter Keyboard">
-                    <rect key="frame" x="-1" y="150" width="320" height="201"/>
+                <searchBar contentMode="redraw" text="" placeholder="search for music..." translatesAutoresizingMaskIntoConstraints="NO" id="1Ts-aB-64M">
+                    <rect key="frame" x="4" y="6" width="311" height="44"/>
+                    <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEX-Z6-WEn" userLabel="Letter Keyboard">
+                    <rect key="frame" x="0.0" y="166" width="320" height="180"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNm-5t-Hha">
-                            <rect key="frame" x="12" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="10" y="8" width="31" height="38"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="Q">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="qPressed:" destination="-1" eventType="touchUpInside" id="jsW-87-06h"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owM-oX-kp7">
-                            <rect key="frame" x="102" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="100" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="R">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="rPressed:" destination="-1" eventType="touchUpInside" id="d55-2J-ZHK"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-OC-PzH">
-                            <rect key="frame" x="72" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="70" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="E">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="ePressed:" destination="-1" eventType="touchUpInside" id="LeU-GD-Rtm"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fE-DL-YTG">
-                            <rect key="frame" x="132" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="130" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="T">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="tPressed:" destination="-1" eventType="touchUpInside" id="JqB-zG-VPo"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxn-em-cPb">
-                            <rect key="frame" x="222" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="220" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="I">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="iPressed:" destination="-1" eventType="touchUpInside" id="B9f-DT-5oi"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLr-Uh-Iuz">
-                            <rect key="frame" x="192" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="190" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="U">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="uPressed:" destination="-1" eventType="touchUpInside" id="Ua1-S8-Kdv"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J03-V8-nJt">
-                            <rect key="frame" x="162" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="160" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="Y">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="yPressed:" destination="-1" eventType="touchUpInside" id="vKR-sm-gL7"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsa-la-q4s">
-                            <rect key="frame" x="282" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="280" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="P">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="pPressed:" destination="-1" eventType="touchUpInside" id="EpQ-XO-Bfl"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-cL-xZE">
-                            <rect key="frame" x="252" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="250" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="O">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="oPressed:" destination="-1" eventType="touchUpInside" id="gZS-sy-axK"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-Ni-Dtp">
-                            <rect key="frame" x="42" y="5" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="40" y="8" width="31" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="W">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="wPressed:" destination="-1" eventType="touchUpInside" id="dVs-Yj-NdP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0e-Dk-LeY">
-                            <rect key="frame" x="56" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="54" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="S">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="sPressed:" destination="-1" eventType="touchUpInside" id="Oxn-zg-hSi"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEn-aN-HAv">
-                            <rect key="frame" x="26" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="24" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="A">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="aPressed:" destination="-1" eventType="touchUpInside" id="sBc-dE-qqp"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HG6-ub-fUC">
-                            <rect key="frame" x="116" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
-                            <state key="normal" title="F">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="fPressed:" destination="-1" eventType="touchUpInside" id="zcz-IW-uXG"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-9D-7Z5">
-                            <rect key="frame" x="86" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="84" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="D">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="dPressed:" destination="-1" eventType="touchUpInside" id="BqN-Ja-y0R"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnh-6a-K58">
-                            <rect key="frame" x="176" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="174" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="H">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="hPressed:" destination="-1" eventType="touchUpInside" id="IPp-vh-xP5"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-DC-xW4">
-                            <rect key="frame" x="146" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="144" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="G">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="gPressed:" destination="-1" eventType="touchUpInside" id="QKz-bd-ATX"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC6-BY-IxO">
-                            <rect key="frame" x="236" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="234" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="K">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="kPressed:" destination="-1" eventType="touchUpInside" id="4tY-KG-7bJ"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVW-OX-lGz">
-                            <rect key="frame" x="206" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="204" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="J">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="jPressed:" destination="-1" eventType="touchUpInside" id="AmN-y5-P0k"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-8I-myL">
-                            <rect key="frame" x="266" y="41" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="264" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="L">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="lPressed:" destination="-1" eventType="touchUpInside" id="egp-RN-am0"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-0W-iPn">
-                            <rect key="frame" x="86" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="76" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="X">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="xPressed:" destination="-1" eventType="touchUpInside" id="ThD-aQ-l3j"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaE-d5-oAB">
-                            <rect key="frame" x="56" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="46" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="Z">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="zPressed:" destination="-1" eventType="touchUpInside" id="24u-CI-a5S"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCG-Ig-YtP">
-                            <rect key="frame" x="146" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="136" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="V">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="vPressed:" destination="-1" eventType="touchUpInside" id="4sx-ha-2zA"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFU-1N-KVc">
-                            <rect key="frame" x="116" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="106" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="C">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="cPressed:" destination="-1" eventType="touchUpInside" id="WKA-6w-plm"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-0G-wlr">
-                            <rect key="frame" x="176" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="166" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="B">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="bPressed:" destination="-1" eventType="touchUpInside" id="D1S-A7-tfu"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k3-qw-OU6">
-                            <rect key="frame" x="236" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="226" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="M">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="mPressed:" destination="-1" eventType="touchUpInside" id="Vmz-Bp-6VZ"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbi-JV-vI7">
-                            <rect key="frame" x="219" y="113" width="91" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="217" y="130" width="95" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="Search">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="searchPressed:" destination="-1" eventType="touchUpInside" id="KSO-H6-apV"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbF-u4-f1D">
-                            <rect key="frame" x="75" y="113" width="142" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="72" y="130" width="146" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="spacePressed:" destination="-1" eventType="touchUpInside" id="Exd-Ln-8Tx"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMD-66-Kvg">
-                            <rect key="frame" x="266" y="77" width="44" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="258" y="88" width="54" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="←">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="backSpacePressed:" destination="-1" eventType="touchUpInside" id="K6Y-R3-Dyb"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaI-SJ-9Fb">
-                            <rect key="frame" x="12" y="113" width="61" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="8" y="130" width="64" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="+">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="plusPressed:" destination="-1" eventType="touchUpInside" id="ud9-ty-89c"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVt-k9-AU1">
-                            <rect key="frame" x="206" y="77" width="28" height="34"/>
-                            <color key="backgroundColor" white="0.2024695889" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="frame" x="196" y="88" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
                             <state key="normal" title="N">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="nPressed:" destination="-1" eventType="touchUpInside" id="9Fb-0c-hVm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZo-Wy-eRB">
+                            <rect key="frame" x="8" y="88" width="38" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="14"/>
+                            <state key="normal" title="123">
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="zPressed:" destination="-1" eventType="touchUpInside" id="WBo-Vc-LhV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HG6-ub-fUC">
+                            <rect key="frame" x="114" y="46" width="32" height="42"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="15"/>
+                            <state key="normal" title="F">
+                                <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="fPressed:" destination="-1" eventType="touchUpInside" id="zcz-IW-uXG"/>
                             </connections>
                         </button>
                     </subviews>
@@ -394,40 +411,6 @@
                         <outletCollection property="gestureRecognizers" destination="zQ4-kb-ZLz" appends="YES" id="Xtn-oZ-MQw"/>
                     </connections>
                 </view>
-                <searchBar contentMode="redraw" text="" placeholder="search for music..." translatesAutoresizingMaskIntoConstraints="NO" id="1Ts-aB-64M">
-                    <rect key="frame" x="4" y="6" width="311" height="44"/>
-                    <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vD4-BB-dZr">
-                    <rect key="frame" x="4" y="114" width="311" height="191"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="158" id="Jqw-Sx-Jol"/>
-                        <constraint firstAttribute="height" constant="160" id="LBO-hV-RGl"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="LyB-TB-MVR"/>
-                        <constraint firstAttribute="width" constant="311" id="Txu-df-6pt"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="152" id="X5B-Yl-NSG"/>
-                    </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="S7l-dp-m4m">
-                        <size key="itemSize" width="156" height="81"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="LBO-hV-RGl"/>
-                            <exclude reference="LyB-TB-MVR"/>
-                            <exclude reference="Txu-df-6pt"/>
-                            <exclude reference="X5B-Yl-NSG"/>
-                        </mask>
-                    </variation>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="v0o-ko-qvX"/>
-                        <outlet property="delegate" destination="-1" id="hPl-pU-1fI"/>
-                    </connections>
-                </collectionView>
                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-eg-HMk" userLabel="Footer">
                     <rect key="frame" x="5" y="310" width="311" height="36"/>
                     <subviews>
@@ -477,25 +460,54 @@
                         <outlet property="delegate" destination="-1" id="svg-CR-TbN"/>
                     </connections>
                 </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vD4-BB-dZr">
+                    <rect key="frame" x="4" y="114" width="311" height="191"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="Jqw-Sx-Jol"/>
+                        <constraint firstAttribute="height" constant="160" id="LBO-hV-RGl"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="LyB-TB-MVR"/>
+                        <constraint firstAttribute="width" constant="311" id="Txu-df-6pt"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="152" id="X5B-Yl-NSG"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="S7l-dp-m4m">
+                        <size key="itemSize" width="156" height="81"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LBO-hV-RGl"/>
+                            <exclude reference="LyB-TB-MVR"/>
+                            <exclude reference="Txu-df-6pt"/>
+                            <exclude reference="X5B-Yl-NSG"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="v0o-ko-qvX"/>
+                        <outlet property="delegate" destination="-1" id="hPl-pU-1fI"/>
+                    </connections>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="1Ts-aB-64M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="0Eh-MO-3W7"/>
+                <constraint firstItem="LEX-Z6-WEn" firstAttribute="top" secondItem="Rmp-n6-cc6" secondAttribute="bottom" constant="47" id="4vR-KE-KIu"/>
                 <constraint firstItem="bGZ-eg-HMk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6GN-Mn-HJn"/>
                 <constraint firstItem="Rmp-n6-cc6" firstAttribute="top" secondItem="1Ts-aB-64M" secondAttribute="bottom" constant="4" id="7cV-a0-Zc2"/>
                 <constraint firstItem="Rmp-n6-cc6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ak0-1E-fxS"/>
+                <constraint firstItem="LEX-Z6-WEn" firstAttribute="trailing" secondItem="Rmp-n6-cc6" secondAttribute="trailing" id="Eus-8F-uSv"/>
                 <constraint firstAttribute="trailing" secondItem="bGZ-eg-HMk" secondAttribute="trailing" constant="5" id="GjL-Wx-Ijt"/>
+                <constraint firstItem="vD4-BB-dZr" firstAttribute="trailing" secondItem="1Ts-aB-64M" secondAttribute="trailing" id="IAo-AE-gIq"/>
                 <constraint firstItem="1Ts-aB-64M" firstAttribute="leading" secondItem="vD4-BB-dZr" secondAttribute="leading" id="IQt-i4-fa0"/>
                 <constraint firstItem="1Ts-aB-64M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="JWC-Jm-3Gi"/>
                 <constraint firstItem="Rmp-n6-cc6" firstAttribute="centerX" secondItem="1Ts-aB-64M" secondAttribute="centerX" id="JsL-WB-xCf"/>
                 <constraint firstItem="1Ts-aB-64M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Msv-FW-cWz"/>
-                <constraint firstItem="LEX-Z6-WEn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-1" id="Ykn-vE-spP"/>
+                <constraint firstItem="LEX-Z6-WEn" firstAttribute="leading" secondItem="Rmp-n6-cc6" secondAttribute="leading" id="RS9-W3-sAa"/>
                 <constraint firstAttribute="bottom" secondItem="bGZ-eg-HMk" secondAttribute="bottom" constant="5" id="aCc-M9-hdS"/>
-                <constraint firstAttribute="bottom" secondItem="LEX-Z6-WEn" secondAttribute="bottom" constant="-1" id="fZr-Mr-lY4"/>
                 <constraint firstItem="bGZ-eg-HMk" firstAttribute="top" secondItem="vD4-BB-dZr" secondAttribute="bottom" constant="5" id="hH1-rk-IUa"/>
-                <constraint firstItem="vD4-BB-dZr" firstAttribute="centerX" secondItem="LEX-Z6-WEn" secondAttribute="centerX" id="k1V-WA-STn"/>
-                <constraint firstItem="LEX-Z6-WEn" firstAttribute="top" secondItem="Rmp-n6-cc6" secondAttribute="bottom" constant="27" id="mLz-Lk-Ma2"/>
-                <constraint firstItem="1Ts-aB-64M" firstAttribute="centerX" secondItem="LEX-Z6-WEn" secondAttribute="centerX" id="ojl-Bj-C6A"/>
+                <constraint firstItem="LEX-Z6-WEn" firstAttribute="bottom" secondItem="bGZ-eg-HMk" secondAttribute="bottom" id="jxq-ko-FfV"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
