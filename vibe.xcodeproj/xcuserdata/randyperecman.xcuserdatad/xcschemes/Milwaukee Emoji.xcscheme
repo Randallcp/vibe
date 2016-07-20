@@ -18,7 +18,7 @@
                BlueprintIdentifier = "A3A6E2F91C5FF204000F5C68"
                BuildableName = "Milwaukee Emoji.appex"
                BlueprintName = "Milwaukee Emoji"
-               ReferencedContainer = "container:Emoji Keyboard.xcodeproj">
+               ReferencedContainer = "container:vibe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -32,7 +32,7 @@
                BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
                BuildableName = "LocaMoji.app"
                BlueprintName = "Emoji Keyboard"
-               ReferencedContainer = "container:Emoji Keyboard.xcodeproj">
+               ReferencedContainer = "container:vibe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
             BlueprintIdentifier = "A3A6E2F91C5FF204000F5C68"
             BuildableName = "Milwaukee Emoji.appex"
             BlueprintName = "Milwaukee Emoji"
-            ReferencedContainer = "container:Emoji Keyboard.xcodeproj">
+            ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,16 +67,20 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "0"
+         BundleIdentifier = "onmilwaukee.Emoji-Keyboard"
+         RemotePath = "/var/containers/Bundle/Application/0CE4D14C-7C06-4885-8D1B-42CC62722B19/LocaMoji.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
             BlueprintName = "Emoji Keyboard"
-            ReferencedContainer = "container:Emoji Keyboard.xcodeproj">
+            ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,7 +98,7 @@
             BlueprintIdentifier = "A3A6E2E01C5FF1DE000F5C68"
             BuildableName = "LocaMoji.app"
             BlueprintName = "Emoji Keyboard"
-            ReferencedContainer = "container:Emoji Keyboard.xcodeproj">
+            ReferencedContainer = "container:vibe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -302,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "Emoji Keyboard" */;
+			buildConfigurationList = A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "vibe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -652,7 +652,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "Emoji Keyboard" */ = {
+		A3A6E2DC1C5FF1DE000F5C68 /* Build configuration list for PBXProject "vibe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3A6E2F11C5FF1DE000F5C68 /* Debug */,
